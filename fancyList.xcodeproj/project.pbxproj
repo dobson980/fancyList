@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E2F7B5AD219F4269006D177D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B5AC219F4269006D177D /* AppDelegate.swift */; };
-		E2F7B5AF219F4269006D177D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B5AE219F4269006D177D /* ViewController.swift */; };
+		E2F7B5AF219F4269006D177D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B5AE219F4269006D177D /* ListTableViewController.swift */; };
 		E2F7B5B2219F4269006D177D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F7B5B0219F4269006D177D /* Main.storyboard */; };
 		E2F7B5B4219F426A006D177D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F7B5B3219F426A006D177D /* Assets.xcassets */; };
 		E2F7B5B7219F426A006D177D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F7B5B5219F426A006D177D /* LaunchScreen.storyboard */; };
+		E2F7B5C3219F4E84006D177D /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B5C2219F4E84006D177D /* ParallaxCell.swift */; };
+		E2F7B5C5219F5120006D177D /* imageAndNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7B5C4219F5120006D177D /* imageAndNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2F7B5A9219F4269006D177D /* fancyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fancyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7B5AC219F4269006D177D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2F7B5AE219F4269006D177D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2F7B5AE219F4269006D177D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		E2F7B5B1219F4269006D177D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2F7B5B3219F426A006D177D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F7B5B6219F426A006D177D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F7B5B8219F426A006D177D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F7B5C2219F4E84006D177D /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		E2F7B5C4219F5120006D177D /* imageAndNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageAndNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,10 @@
 		E2F7B5A0219F4269006D177D = {
 			isa = PBXGroup;
 			children = (
-				E2F7B5AB219F4269006D177D /* fancyList */,
+				E2F7B5C1219F4398006D177D /* Template */,
+				E2F7B5C0219F4396006D177D /* Model */,
+				E2F7B5BF219F4393006D177D /* View */,
+				E2F7B5BE219F438E006D177D /* Controller */,
 				E2F7B5AA219F4269006D177D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +58,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2F7B5AB219F4269006D177D /* fancyList */ = {
+		E2F7B5BE219F438E006D177D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2F7B5AE219F4269006D177D /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2F7B5BF219F4393006D177D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2F7B5B3219F426A006D177D /* Assets.xcassets */,
+				E2F7B5B0219F4269006D177D /* Main.storyboard */,
+				E2F7B5B5219F426A006D177D /* LaunchScreen.storyboard */,
+				E2F7B5C2219F4E84006D177D /* ParallaxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2F7B5C0219F4396006D177D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2F7B5C4219F5120006D177D /* imageAndNames.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2F7B5C1219F4398006D177D /* Template */ = {
 			isa = PBXGroup;
 			children = (
 				E2F7B5AC219F4269006D177D /* AppDelegate.swift */,
-				E2F7B5AE219F4269006D177D /* ViewController.swift */,
-				E2F7B5B0219F4269006D177D /* Main.storyboard */,
-				E2F7B5B3219F426A006D177D /* Assets.xcassets */,
-				E2F7B5B5219F426A006D177D /* LaunchScreen.storyboard */,
 				E2F7B5B8219F426A006D177D /* Info.plist */,
 			);
-			path = fancyList;
+			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F7B5AF219F4269006D177D /* ViewController.swift in Sources */,
+				E2F7B5C5219F5120006D177D /* imageAndNames.swift in Sources */,
+				E2F7B5C3219F4E84006D177D /* ParallaxCell.swift in Sources */,
+				E2F7B5AF219F4269006D177D /* ListTableViewController.swift in Sources */,
 				E2F7B5AD219F4269006D177D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JLFK698MRZ;
-				INFOPLIST_FILE = fancyList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JLFK698MRZ;
-				INFOPLIST_FILE = fancyList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
