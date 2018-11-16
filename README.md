@@ -1,3 +1,3 @@
-#Fancy List
+#FancyList
 
 ![SCREENSHOT](assets/SS.GIF)
